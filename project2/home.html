@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  />
+</head>
+<body>
+    <header>
+        <button class="cancel">Назад</button>
+        <button id="btn-add-user">Add</button>
+    </header>
+    <main>
+        <ul class="notifications"></ul>
+        <div class="modal-wrapper">
+            <form id="form-adding-products">
+                <label for="input-name">
+                Name
+                <input id="input-name" type="text" name="name"/>
+                </label>
+                <label for="input-position">
+                </label>
+                Position
+                <input id="input-position" type="text" name="position"/>
+                </label>
+                <label for="input-description">
+                Description
+                <input id="input-description" type="text" name="description"/>
+                </label>
+                <label for="input-avatar">
+                Avatar
+                <input id="input-avatar" type="text" name="description"/>
+                </label>
+                <label for="input-price">
+                Price
+                <input id="input-price" type="text" name="price"/>
+                </label>
+                <div>
+                    <p>Gender</p>
+                    <label for="radio-male">
+                        Male
+                        <input
+                            type="radio"
+                            id="radio-male"
+                            name="gender"
+                            value="male"
+                            checked>
+                    </label>
+                    <label for="radio-female">
+                        Female
+                        <input
+                            type="radio"
+                            id="radio-female"
+                            name="gender"
+                            value="female">
+                    </label>
+                </div>
+                <button class="submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="loadAndUsers">
+            <span class="loader"></span>
+            <section class="section-users">
+                <h2 class="h2">A list of users</h2>
+                <div class="user-list"></div>
+            </section>
+        </div>
+        <section class="section-advantages">
+            <h2>Why Choose Us?</h2>
+        </section>
+    </main>
+    <script type="module" src="./mock/users.mjs"></script>
+    <script type="module" src="home.mjs"></script>
+</body>
+</html>
